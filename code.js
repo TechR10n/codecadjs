@@ -23,40 +23,6 @@ console.log("Melbourne is great".substring(0,12));
 console.log("Hamburgers".substring(3,10));
 
 
-confirm("I am ready to play");
-var age = prompt("What is your age?")
-
-if(age < 13)
-{
-    console.log("You can play, but it's not our fault")
-}
-else
-{
-    console.log("Awesome. Let's play now!")
-}
-
-console.log("You are at a Justin Bieber concert, and you hear this lyric 'Lace my shoes off, start racing.'");
-console.log("Suddenly, Bieber stops and says, 'Who wants to race me?'");
-userAnswer = prompt("Do you want to race Bieber on stage?");
-if(userAnswer === "yes")
-{
-    console.log("You and Bieber start racing. It's neck and neck! You win by a shoelace")
-}
-else
-{
-    console.log("Oh no! Bieber shakes his head and sings 'I set a pace, so I can race without pacing.'")
-}
-
-feedback = prompt("Rate my game from 0 to 10")
-if(feedback > 8)
-{
-    console.log("Thank you! We should race at the next concert!")
-}
-else
-{
-    console.log("I'll keep practicing coding and racing.")
-}
-
 // Parameter is a number, and we do math with that parameter
 var timesTwo = function(number) {
     return number * 2;
@@ -65,3 +31,21 @@ var timesTwo = function(number) {
 // Call timesTwo here!
 var newNumber = timesTwo(3)
 console.log(newNumber);
+
+var quarter = function(number) {
+    return number / 4;
+}
+
+
+
+if (quarter(24) % 3 === 0 ) {
+    console.log("The statement is true");
+} else {
+    console.log("The statement is false");
+}
+
+var perimeterBox = function(length, width) {
+    return length + length + width + width;
+}
+
+console.log(perimeterBox(2,3));
